@@ -1,4 +1,4 @@
-goccha
+gocha
 =====
 
 Chatwork client with go lang

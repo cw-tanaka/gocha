@@ -3,8 +3,42 @@ gocha
 
 Chatwork client with go lang
 
-ごっちゃって読みます（きっと）
 
-作れる気がしない
+```go
+package main
 
-でもがんばる
+
+import (
+    "github.com/tan-yuki/gocha"
+)
+
+func main() {
+    client := gocha.NewClient(map[string]string {
+        "token": "YOUR API TOKEN",
+    })
+
+    // GET /rooms
+    client.GetRooms()
+
+    // GET /rooms/{id}
+    client.GetRoom(room_id)
+
+    // GET /rooms/{id}/tasks
+    client.GetTasks(room_id)
+
+    // GET /rooms/{id}/task/{id}
+    client.GetTask(room_id, task_id)
+
+    // GET /rooms/{id}/files
+    client.GetFiles(room_id)
+
+    // GET /rooms/{id}/files/{id}
+    client.GetFile(room_id, file_id)
+
+    // POST /rooms/{id}/tasks
+    client.SendTask(new(gocha.Task))
+
+    // POST /rooms/{id}/messages
+    client.SendMessage(new(gocha.Message))
+}
+```

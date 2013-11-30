@@ -5,6 +5,16 @@ Chatwork client with go lang
 
 It is currently in development, not working now.
 
+現在開発中につき、まだ動きません
+
+
+### Install
+
+```bash
+go get github.com/tan-yuki/gocha
+```
+
+### Sample
 
 ```go
 package main

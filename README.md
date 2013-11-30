@@ -3,6 +3,8 @@ gocha
 
 Chatwork client with go lang
 
+It is currently in development, not working now.
+
 
 ```go
 package main
